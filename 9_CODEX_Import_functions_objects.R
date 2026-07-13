@@ -444,6 +444,27 @@ cn <- h5read(
 rownames(amat) <- as.character(rn)
 colnames(amat) <- as.character(cn)
 
+### Mean intensities GBM
+h5ls("inputs/CODEX_IDHm_mean_intensity_gbm.h5")
+
+gbm_amat <- h5read(
+  "inputs/CODEX_IDHm_mean_intensity_gbm.h5",
+  "CODEX_IDHm_mean_intensity_gbm"
+)
+
+rn <- h5read(
+  "inputs/CODEX_IDHm_mean_intensity_gbm.h5",
+  "rownames"
+)
+
+cn <- h5read(
+  "inputs/CODEX_IDHm_mean_intensity_gbm.h5",
+  "colnames"
+)
+
+rownames(gbm_amat) <- as.character(rn)
+colnames(gbm_amat) <- as.character(cn)
+
 ## Nimbus Scores IDHm
 h5ls("inputs/CODEX_IDHm_nimbus_scores.h5")
 
