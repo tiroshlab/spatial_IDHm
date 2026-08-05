@@ -1,5 +1,8 @@
-setwd("/spatial_IDH/github/")
-Sys.setenv(RETICULATE_PYTHON = "/.conda/envs/leiden/bin/python")
+# NOTE: This script reflects the original analysis environment.
+# Update project-specific file paths before running; see README.md.
+
+#setwd("/spatial_IDH/github/")
+#Sys.setenv(RETICULATE_PYTHON = "/.conda/envs/leiden/bin/python")
 
 library(reticulate)
 library(Seurat)
