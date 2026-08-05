@@ -1,3 +1,6 @@
+# NOTE: This script reflects the original analysis environment.
+# Update project-specific file paths before running; see README.md
+
 library(scalop)
 library(dplyr)
 library(tidyverse)
